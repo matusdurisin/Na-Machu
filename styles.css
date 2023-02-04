@@ -8,14 +8,13 @@
 .item7 { grid-area: box3; }
 
 .grid-container {
+  background-color: #6D6427;
   display: grid;
+  gap: 3px;
   grid-template-areas:
     'header header header'
     'ubytovanie brectan kontakt'
     'box1 box2 box3';
-
-  gap: 3px;
-  background-color: #6D6427;
   padding: 0px;
 }
 
@@ -25,16 +24,100 @@
   padding: 20px;
   font-size: 30px
 }
+
 .grid-container > div.item1 {
   background-color: #DDD0D0;
-  text-align: center;
-  padding: 20px 10px;
   font-size: 30px;
+  padding: 20px 10px;
+  text-align: center;
+ }
+
+.ubytovanie { grid-area: nadpis; }
+.item8 { grid-area: foto1; }
+.item9 { grid-area: foto2; }
+.item10 { grid-area: foto3; }
+.item11 { grid-area: foto4; }
+.item12 { grid-area: dub; }
+.item13 { grid-area: buk; }
+.item14 { grid-area: lipa; }
+.item15 { grid-area: javor; }
+.item16 { grid-area: dva; }
+.item17 { grid-area: tri; }
+.item18 { grid-area: styri;}
+.item19 { grid-area: pat; }
+.item20 { grid-area: cenaj;}
+.item21 { grid-area: cenad;}
+.item22 { grid-area: cenat;}
+.item23 { grid-area: cenas;}
+
+.grid-container-2 {
+  background-color: #6D6427;
+  display: grid;
+  gap: 3px;
+  grid-template-areas:
+    'nadpis nadpis nadpis nadpis'
+    'foto1 foto2 foto3 foto4'
+    'dub buk lipa javor'
+    'dva tri styri pat'
+    'cenaj cenad cenat cenas';
+  padding: 0px;
 }
+
+.grid-container-2 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 15;
+  font-size: 15px
+}
+
+.grid-container-2 > div.ubytovanie {
+  background-color: #DDD0D0;
+  font-size: 20;
+  padding: 18px;
+  text-align: left;
+ }
+
+.item40 { grid-area: kontakt; }
+.item41 { grid-area: cislo; }
+.item42 { grid-area: mail1; }
+.item43 { grid-area: mail2; }
+
+.grid-container-4 {
+  background-color: #6D6427;
+  display: grid;
+  gap: 3px;
+  grid-template-areas:
+    'kontakt kontakt kontakt'
+    'cislo mail1 mail2';
+  padding: 0px;
+}
+
+.grid-container-4 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 15;
+  font-size: 15px
+}
+
+.grid-container-4 > div.kontakt {
+  background-color: #DDD0D0;
+  font-size: 20;
+  padding: 18px;
+  text-align: left;
+ }
+
 body {
-  font-family: cursive;
+  font-family:impact ;
 }
 
 .fotky {
-max-width: 30vw;
+max-width: 25vw;
+}
+
+.izby1 {
+max-width: 17vw;
+}
+
+.izby2 {
+max-width: 19vw;
 }
