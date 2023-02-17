@@ -31,9 +31,7 @@
   display: grid;
   gap: 3px;
   grid-template-areas:
-    'header header header'
-    'ubytovanie brectan kontakt'
-    'box1 box2 box3';
+    'header header header';
   padding: 0px;
   padding-bottom: 3px;
 }
@@ -148,6 +146,75 @@
   text-align: left;
 }
 
+ul {list-style-type: none;}
+body {font-family: , sans-serif;}
+
+
+.month {
+  padding: 50 20px;
+  background: #DDD0D0 ;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 3px;
+  background:green;
+  color: white;
+   gap: 3px;
+}
+
 .center-div {
   display: grid;
   grid-template-columns: 1fr 1.5fr 2fr;
@@ -158,24 +225,6 @@
 .empty {
   background-color: #DDD0D0;
 
-}
-
-.brectan-text {
-  grid-column: 2/3;
-  background-color: #E3E0D5;
-  padding: 7px;
-  border: 3px solid #6D6427;
-}
-
-.brectan-text>h4 {
-  font-size: 1.3rem;
-}
-
-.brectan-title {
-  background-color: #DDD0D0;
-  font-size: 20;
-  padding: 18px;
-  text-align: left;
 }
 
 .contact {
@@ -233,4 +282,3 @@ body {
 .izby2 {
   max-width: 19vw;
 }
-
